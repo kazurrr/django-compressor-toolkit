@@ -6,6 +6,8 @@
     "autoprefixer": "~6.5",
     "browserify": "~13.1",
     "babelify": "~7.3",
-    "babel-preset-es2015": "~6.16"
+    "babel-preset-es2015": "~6.16",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
   }
 }

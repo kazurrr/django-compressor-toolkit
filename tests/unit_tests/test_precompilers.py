@@ -1,9 +1,9 @@
-from compressor_toolkit.precompilers import SCSSCompiler, ES6Compiler
+from compressor_additional_compilers.precompilers import SCSSCompiler, ES6Compiler
 
 
 def test_scss_compiler():
     """
-    Test ``compressor_toolkit.precompilers.SCSSCompiler`` on simple SCSS input.
+    Test ``compressor_additional_compilers.precompilers.SCSSCompiler`` on simple SCSS input.
     """
     input_scss = '''
     .a {
@@ -21,7 +21,7 @@ def test_scss_compiler():
 
 def test_es6_compiler():
     """
-    Test ``compressor_toolkit.precompilers.ES6Compiler`` on simple ES6 input.
+    Test ``compressor_additional_compilers.precompilers.ES6Compiler`` on simple ES6 input.
     """
     input_es6 = 'export let CONST = 1'
     output_es5 = (

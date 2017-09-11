@@ -5,7 +5,7 @@ from django.conf import settings
 
 
 class CompressorToolkitConfig(AppConfig):
-    name = 'compressor_toolkit'
+    name = 'compressor_additional_compilers'
 
     LOCAL_NPM_INSTALL = getattr(settings, 'COMPRESS_LOCAL_NPM_INSTALL', True)
 
@@ -51,5 +51,5 @@ class CompressorToolkitConfig(AppConfig):
     ES6_COMPILER_CMD = getattr(settings, 'COMPRESS_ES6_COMPILER_CMD', (
         'export NODE_PATH="{paths}" && '
         '{browserify_bin} "{infile}" -o "{outfile}" '
-        '-t [ "{node_modules}/babelify" --presets="{node_modules}/babel-preset-es2015" ]'
+        '-t [ "{node_modules}/babelify" --presets [ es2015 react stage-2 ] ]'
     ))

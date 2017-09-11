@@ -8,7 +8,7 @@ from django.apps import apps
 from django.conf import settings
 
 
-app_config = apps.get_app_config('compressor_toolkit')
+app_config = apps.get_app_config('compressor_additional_compilers')
 logger = logging.getLogger(__file__)
 
 

@@ -2,7 +2,7 @@ import base64
 import os
 import pytest
 
-from compressor_toolkit.filters import CssRelativeFilter, CssDataUriFilter
+from compressor_additional_compilers.filters import CssRelativeFilter, CssDataUriFilter
 
 from tests.utils import TESTS_DIR
 
@@ -15,7 +15,7 @@ from tests.utils import TESTS_DIR
 ], ids=['letter', 'one dot', 'two dots', 'slash'])
 def test_css_relative_url_filter(original_url, processed_url):
     """
-    Test ``compressor_toolkit.filters.CssRelativeFilter``.
+    Test ``compressor_additional_compilers.filters.CssRelativeFilter``.
 
     :param original_url: Test function parameter: URL in the original CSS file
                          which is located in '$PROJECT_ROOT/app/static/app/style.css'
@@ -49,7 +49,7 @@ def test_css_relative_url_filter(original_url, processed_url):
 ], ids=['ok svg', 'ok png', 'skip jpg', 'skip folder', 'skip large'])
 def test_css_data_uri_filter(settings, image_path, is_processed):
     """
-    Test ``compressor_toolkit.filters.CssRelativeFilter``.
+    Test ``compressor_additional_compilers.filters.CssRelativeFilter``.
 
     :param settings: ``pytest-django`` fixture: mutable Django settings
     :param image_path: Test function parameter: relative path to the image file

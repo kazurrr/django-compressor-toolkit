@@ -14,7 +14,7 @@ pip install django-compressor-toolkit
 ```py
 // settings.py
 
-INSTALLED_APPS += ('compressor_toolkit',)
+INSTALLED_APPS += ('compressor_additional_compilers',)
 ```
 
 ## Add-ons
@@ -37,7 +37,7 @@ It also enables Django static imports in SCSS, see the example below.
 // settings.py
 
 COMPRESS_PRECOMPILERS = (
-    ('text/x-scss', 'compressor_toolkit.precompilers.SCSSCompiler'),
+    ('text/x-scss', 'compressor_additional_compilers.precompilers.SCSSCompiler'),
 )
 ```
 
@@ -103,7 +103,7 @@ It also enables Django static imports in ES6, see the example below.
 // settings.py
 
 COMPRESS_PRECOMPILERS = (
-    ('module', 'compressor_toolkit.precompilers.ES6Compiler'),
+    ('module', 'compressor_additional_compilers.precompilers.ES6Compiler'),
 )
 ```
 

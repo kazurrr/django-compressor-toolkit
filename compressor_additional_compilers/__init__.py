@@ -1,7 +1,7 @@
 # PEP 440 - version number format
-VERSION = (0, 6, 1, 'dev0')
+VERSION = (0, 7, 1)
 
 # PEP 396 - module version variable
 __version__ = '.'.join(map(str, VERSION))
 
-default_app_config = 'compressor_toolkit.apps.CompressorToolkitConfig'
+default_app_config = 'compressor_additional_compilers.apps.CompressorToolkitConfig'

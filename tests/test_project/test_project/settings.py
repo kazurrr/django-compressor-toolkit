@@ -9,7 +9,7 @@ SECRET_KEY = '*****'
 INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'compressor',
-    'compressor_toolkit',
+    'compressor_additional_compilers',
     'test_project.base',
     'test_project.app'
 )
@@ -44,11 +44,11 @@ else:
 # django-compressor settings
 COMPRESS_ROOT = os.path.join(BASE_DIR, 'compressor')
 COMPRESS_PRECOMPILERS = (
-    ('text/x-scss', 'compressor_toolkit.precompilers.SCSSCompiler'),
-    ('module', 'compressor_toolkit.precompilers.ES6Compiler')
+    ('text/x-scss', 'compressor_additional_compilers.precompilers.SCSSCompiler'),
+    ('module', 'compressor_additional_compilers.precompilers.ES6Compiler')
 )
 COMPRESS_ENABLED = False
 
-# django-compressor-toolkit settings; see compressor_toolkit/apps.py for details
+# django-compressor-toolkit settings; see compressor_additional_compilers/apps.py for details
 if 'COMPRESS_NODE_MODULES' in os.environ:
     COMPRESS_NODE_MODULES = os.getenv('COMPRESS_NODE_MODULES')

@@ -1,20 +1,20 @@
 from setuptools import setup, find_packages
 
-import compressor_toolkit
+import compressor_additional_compilers
 
 
 setup(
-    name='django-compressor-toolkit',
-    version=compressor_toolkit.__version__,
+    name='django-compressor-additional-compilers',
+    version=compressor_additional_compilers.__version__,
     description='Set of add-ons for django-compressor',
     long_description=(
         'Simply enable SCSS and ES6 in your Django project. '
         'Read more on `project\'s GitHub page '
-        '<https://github.com/kottenator/django-compressor-toolkit>`_.'
+        '<https://github.com/kazurrr/django-compressor-toolkit>`_.'
     ),
-    url='https://github.com/kottenator/django-compressor-toolkit',
-    author='Rostyslav Bryzgunov',
-    author_email='kottenator@gmail.com',
+    url='https://github.com/kazurrr/django-compressor-toolkit',
+    author='Karol Masuhr',
+    author_email='karol@masuhr.pl',
     license='MIT',
     packages=find_packages(exclude=['tests', 'tests.*']),
     include_package_data=True,

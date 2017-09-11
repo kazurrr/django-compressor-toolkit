@@ -7,7 +7,7 @@ from django.contrib.staticfiles import finders
 from django.core.files.temp import NamedTemporaryFile
 
 
-app_config = apps.get_app_config('compressor_toolkit')
+app_config = apps.get_app_config('compressor_additional_compilers')
 
 
 def get_all_static():
