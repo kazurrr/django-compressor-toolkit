@@ -8,7 +8,7 @@ that simply enables SCSS and ES6 in your Django project.
 ## Installation
 
 ```sh
-pip install django-compressor-toolkit
+pip install django-compressor-additional-compilers
 ```
 
 ```py
